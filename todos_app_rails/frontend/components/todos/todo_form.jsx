@@ -39,9 +39,8 @@ class TodoForm extends React.Component {
       id: new Date().getTime(),
       done: false
     };
+    this.props.createTodo(newTodo).then(() => this.setState({title: '', body: ''}));
 
-    this.props.receiveTodo(newTodo);
-    this.setState({title: '', body: ''});
   }
 
   update(attr) {

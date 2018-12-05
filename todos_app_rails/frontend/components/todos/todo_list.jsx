@@ -14,7 +14,7 @@ class TodoList extends React.Component {
           })
         }
         </ul>
-        <TodoForm receiveTodo = {this.props.receiveTodo} />
+        <TodoForm receiveTodo = {this.props.receiveTodo} createTodo = {this.props.createTodo} />
       </div>
     );
   }
